@@ -1,0 +1,17 @@
+<ActionBar title="To Do List">
+        <ActionItem (tap)="onAdd()"
+            ios.systemIcon="4" ios.position="right"
+            text="Add" android.position="popup">
+        </ActionItem>
+</ActionBar>
+<GridLayout rows="30%, *">
+    <GridLayout row="0" columns="*, auto" class="add-bar">
+        <TextField #activityTextField hint="Enter an activity" col="0"></TextField>
+        <Image src="res://Add" col="1"></Image>
+    </GridLayout>
+    <ListView [items]="activityList" row="1" class="small-spacing">
+        <ng-template let-item="item">
+          <Label [text]="item.title" class="medium-spacing"></Label>
+        </ng-template>
+    </ListView>
+</GridLayout>

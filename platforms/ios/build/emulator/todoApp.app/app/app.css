@@ -1,0 +1,17 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+.large-text {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.small-spacing {
+    margin: 5;
+  }
+  .medium-spacing {
+    margin: 10;
+  }
+
+.add-bar {
+    background-color: lightyellow;
+}
